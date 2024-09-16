@@ -1,6 +1,3 @@
-# sistema-gestion-estudiantes
-Trabajo para la asignatura desarrollo web II IPChile
-
 # Sistema de Gestión de Estudiantes
 
 ![Java](https://img.shields.io/badge/Java-17-blue)

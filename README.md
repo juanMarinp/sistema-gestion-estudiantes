@@ -27,3 +27,75 @@ El **Sistema de Gestión de Estudiantes** es una aplicación web desarrollada ut
 
 ## Estructura del Proyecto
 
+student-management-system/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/com/universidad/
+│   │   │   ├── controller/            # Controladores web
+│   │   │   ├── model/                 # Modelos de entidades JPA
+│   │   │   ├── repository/            # Repositorios (Spring Data JPA)
+│   │   │   ├── service/               # Servicios para lógica de negocio
+│   │   └── resources/
+│   │       ├── templates/             # Plantillas HTML de Thymeleaf
+│   │       └── application.properties # Configuración de la aplicación
+│   └── test/                          # Tests unitarios e integrados
+│
+├── pom.xml                            # Configuración de Maven
+└── README.md                          # Documentación del proyecto
+
+
+## Requisitos previos
+
+Antes de ejecutar la aplicación, asegúrate de tener instalado lo siguiente:
+
+- **Java 17**
+- **Maven 3.8+**
+- **MySQL 8.0+** (o una base de datos alternativa como H2 para desarrollo local)
+
+## Primeros pasos
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/yourusername/student-management-system.git
+cd student-management-system
+```
+## 2. Configurar la base de datos MySQL
+
+En el archivo `src/main/resources/application.properties`, actualiza la configuración de la conexión a MySQL:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/university_db
+spring.datasource.username=root
+spring.datasource.password=tucontraseña
+spring.jpa.hibernate.ddl-auto=update
+```
+
+## 3. Compilar el proyecto
+
+Ejecuta el siguiente comando para compilar el proyecto:
+
+```bash
+mvn clean install
+```
+
+## 4. Compilar el proyecto
+
+Utiliza el siguiente comando para iniciar la aplicación:
+
+```bash
+mvn spring-boot:run
+```
+
+La aplicación estará disponible en http://localhost:8080.
+
+## Tecnologías utilizadas
+
+- **Java 17**: Lenguaje de programación.
+- **Spring Boot 3.1.0**: Framework para construir el backend.
+- **Spring Data JPA**: ORM para interactuar con la base de datos.
+- **Thymeleaf**: Motor de plantillas para el frontend.
+- **MySQL**: Base de datos (o H2 para pruebas).
+- **Maven**: Herramienta de automatización de construcción.
+

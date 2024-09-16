@@ -26,7 +26,7 @@ El **Sistema de Gestión de Estudiantes** es una aplicación web desarrollada ut
 - **Interfaz de usuario** responsiva con Thymeleaf para la gestión de datos.
 
 ## Estructura del Proyecto
-
+```bash
 student-management-system/
 │
 ├── src/
@@ -43,7 +43,7 @@ student-management-system/
 │
 ├── pom.xml                            # Configuración de Maven
 └── README.md                          # Documentación del proyecto
-
+```
 
 ## Requisitos previos
 
